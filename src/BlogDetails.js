@@ -9,7 +9,7 @@ const BlogDetails = () => {
   const history = useHistory();
 
   const deleteClick = () => {
-    fetch('http://localhost:8000/blogs/' + blog.id, {
+    fetch('http://localhost:8000/blogs/' + blog[0].ID, {
       method: 'DELETE',
     }).then(() => {
       history.push('/');
@@ -22,9 +22,9 @@ const BlogDetails = () => {
       {error && <div>{error}</div>}
       {blog && (
         <article>
-          <h2>{blog.title}</h2>
-          <p>Written by: {blog.author}</p>
-          <div>{blog.body}</div>
+          <h2>{blog[0].Title}</h2>
+          <p>Written by: {blog[0].Author}</p>
+          <div>{blog[0].Blog_Body}</div>
           <button onClick={deleteClick}>Delete Story</button>
         </article>
       )}

@@ -3,16 +3,16 @@ import { useHistory } from 'react-router-dom';
 
 const Create = () => {
   const [title, setTitle] = useState('');
-  const [body, setBody] = useState('');
+  const [blog_body, setBlog_body] = useState('');
   const [author, setAuthor] = useState('Jason');
   const [isLoading, setIsLoading] = useState(false);
   const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const blog = { title, body, author };
+    const blog = { title, blog_body, author };
 
-    fetch('http://localhost:8000/blogs', {
+    fetch('http://localhost:8000/create', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(blog),
@@ -37,13 +37,12 @@ const Create = () => {
         <label> Blog Body:</label>
         <textarea
           required
-          value={body}
-          onChange={(e) => setBody(e.target.value)}
+          value={blog_body}
+          onChange={(e) => setBlog_body(e.target.value)}
         ></textarea>
         <label>Author:</label>
         <select value={author} onChange={(e) => setAuthor(e.target.value)}>
           <option value='Jason'>Jason</option>
-          <option value='Melisa'>Melisa</option>
         </select>
         {!isLoading && <button>Add Blog</button>}
         {isLoading && <button disabled> Adding...</button>}

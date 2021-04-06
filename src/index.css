@@ -1,11 +1,17 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 /* base styles */
 * {
   margin: 0;
-  font-family: 'Roboto';
-  color: #333;
+  font-family: 'montserrat';
+  color: white;
 }
+body {
+  background-color: steelblue;
+  font-family: 'montserrat', sans-serif;
+  color: white;
+}
+
 .navbar {
   padding: 20px;
   display: flex;
@@ -13,9 +19,14 @@
   max-width: 600px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
+  background-color: #343a40;
+  color: white;
 }
 .navbar h1 {
-  color: #f1356d;
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: white;
 }
 .navbar .links {
   margin-left: auto;
@@ -24,16 +35,17 @@
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: steelblue;
 }
 .content {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
 }
-
 
 .blog-preview {
   padding: 10px 16px;
@@ -45,31 +57,29 @@
 }
 .blog-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: white;
   margin-bottom: 8px;
 }
 .blog-preview a {
   text-decoration: none;
 }
 
-
 .blog-details h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: white;
   margin-bottom: 10px;
 }
 .blog-details div {
   margin: 20px 0;
 }
 .blog-details button {
-  background: #f1356d;
+  background: #343a40;
   color: #fff;
   border: 0;
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
 }
-
 
 .create {
   max-width: 400px;
@@ -82,12 +92,14 @@
 }
 .create h2 {
   font-size: 20px;
-  color: #f1356d;
+  font-family: 'montserrat';
+  color: white;
   margin-bottom: 30px;
 }
 .create input,
 .create textarea,
 .create select {
+  color: black;
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
@@ -96,10 +108,10 @@
   display: block;
 }
 .create button {
-  background: #f1356d;
+  background: #343a40;
   color: #fff;
   border: 0;
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
-} 
+}

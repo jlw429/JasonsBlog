@@ -9,7 +9,7 @@ const Home = () => {
     <div className='home'>
       {error && <div>{error}</div>}
       {isLoading && <div>Hang On...</div>}
-      {blogs && <BlogList blogs={blogs} title='All Blogs!' />}
+      {blogs && <BlogList blogs={blogs} title='All Blogs' />}
     </div>
   );
   //The curly braces are conditional rendering for templating above. It takes from the left see tutorial 17 net ninja
