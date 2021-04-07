@@ -23,7 +23,7 @@ const BlogDetails = () => {
       {blog && (
         <article>
           <h2>{blog[0].Title}</h2>
-          <p>Written by: {blog[0].Author}</p>
+          <p>{blog[0].CreationDate.slice(0, 10)}</p>
           <div>{blog[0].Blog_Body}</div>
           <button onClick={deleteClick}>Delete Story</button>
         </article>

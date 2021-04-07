@@ -12,16 +12,13 @@ const BlogList = ({ blogs, title }) => {
         <div className='blog-preview' key={blog.ID}>
           <Link to={`/blogs/${blog.ID}`}>
             <h2>{blog.Title}</h2>
-            <p>{blog.CreationDate}</p>
-            <p>Written By: {blog.Author}</p>
+            <p>{blog.CreationDate.slice(0, 10)}</p>
           </Link>
           {/* <button onClick={() => handleDelete(blog.id)}>Delete Blog</button> */}
         </div>
       ))}
     </div>
-    
   );
-  
 };
 
 export default BlogList;

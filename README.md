@@ -1,4 +1,4 @@
-#Jasons Blog
+# Jasons Blog
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg 'License Badge')
 
@@ -8,7 +8,6 @@
 - [Installation](#installation)
 - [License](#license)
 - [Questions](#questions)
-- [Video](#video)
 - [Screenshots](#screenshots)
 
 ## Description:
@@ -31,16 +30,17 @@
 
 - [GitHub Profile](https://github.com/jlw429)
 
-## Video:
-
-- [Video Explanation](https://drive.google.com/file/d/1N1HqknGRHv-lTIvK1UmEcHElXqEFZ9HE/view?usp=sharing)
 
 ## Screenshots
 
 ### Main
 
-![Main Page](assets/inquirer.png 'Index')
+![Main Page](public/home_screenshot.png 'Index')
 
 ### Blog Entry:
 
-![Blog Entry](assets/jest.png 'Terminal and index.js')
+![Blog Entry](public/view_blog_screenshot.png 'Blog Index')
+
+### Add a Blog:
+
+![Add Blog](public/add_screenshot.png 'add blog')
