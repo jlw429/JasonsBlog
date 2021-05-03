@@ -28,7 +28,7 @@ app.get('/blogs', (req, res) => {
       return res.status(500).end();
     }
     console.log(data);
-    return res.send(data);
+    return res.json(data);
   });
 });
 
@@ -38,7 +38,7 @@ app.get('/blogs/:id', (req, res) => {
       return res.status(500).end();
     }
     console.log(data);
-    return res.send(data);
+    return res.json(data);
   });
 });
 
@@ -54,7 +54,7 @@ app.post('/create', (req, res) => {
       if (err) {
         console.log(err);
       } else {
-        res.send('Values Inserted');
+        res.json('Data Element Inserted');
       }
     }
   );
